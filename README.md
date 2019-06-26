@@ -5,6 +5,7 @@ If a user hits your server at http://localhost:7890/index.html your server shoul
 
 ## steps
 
-1. create an html file in public directory
-1. create a server
-1. test that the server is live with console.logs
+1. ~~create an html file in public directory~~
+1. ~~create a server~~
+1. ~~test that the server is live with console.logs~~
+1. ~~create a function that will read my file and test it~~
