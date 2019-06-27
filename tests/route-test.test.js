@@ -6,6 +6,7 @@ describe('testing routes', () => {
     return request(app)
       .get('/index.html')
       .then(res => {
+        expect(res.status).toEqual(200);
         expect(res.text).toEqual(expect.stringContaining('Pennington'));
       });
   });
@@ -14,6 +15,7 @@ describe('testing routes', () => {
     return request(app)
       .get('/')
       .then(res => {
+        expect(res.status).toEqual(404);
         expect(res.text).toEqual(expect.stringContaining('Not Found'));
       });
   });
