@@ -9,4 +9,12 @@ describe('testing routes', () => {
         expect(res.text).toEqual(expect.stringContaining('Pennington'));
       });
   });
+
+  it('returns Not Found for another pathname', () => {
+    return request(app)
+      .get('/')
+      .then(res => {
+        expect(res.text).toEqual(expect.stringContaining('Not Found'));
+      });
+  });
 });
